@@ -21,6 +21,9 @@
 		C29B3F461853CBA200F33995 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29B3F281853CBA100F33995 /* UIKit.framework */; };
 		C29B3F4E1853CBA200F33995 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C29B3F4C1853CBA200F33995 /* InfoPlist.strings */; };
 		C29B3F501853CBA200F33995 /* DesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F4F1853CBA200F33995 /* DesignPatternsTests.m */; };
+		C29B3F621853CCCD00F33995 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F5B1853CCCD00F33995 /* Singleton.m */; };
+		C29B3F631853CCCD00F33995 /* JMOFirstClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F5F1853CCCD00F33995 /* JMOFirstClass.m */; };
+		C29B3F641853CCCD00F33995 /* JMOSecondClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F611853CCCD00F33995 /* JMOSecondClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,13 @@
 		C29B3F4B1853CBA200F33995 /* DesignPatternsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DesignPatternsTests-Info.plist"; sourceTree = "<group>"; };
 		C29B3F4D1853CBA200F33995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C29B3F4F1853CBA200F33995 /* DesignPatternsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DesignPatternsTests.m; sourceTree = "<group>"; };
+		C29B3F5A1853CCCD00F33995 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		C29B3F5B1853CCCD00F33995 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		C29B3F5D1853CCCD00F33995 /* JMOAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMOAdapterProtocol.h; sourceTree = "<group>"; };
+		C29B3F5E1853CCCD00F33995 /* JMOFirstClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMOFirstClass.h; sourceTree = "<group>"; };
+		C29B3F5F1853CCCD00F33995 /* JMOFirstClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMOFirstClass.m; sourceTree = "<group>"; };
+		C29B3F601853CCCD00F33995 /* JMOSecondClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMOSecondClass.h; sourceTree = "<group>"; };
+		C29B3F611853CCCD00F33995 /* JMOSecondClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMOSecondClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				C29B3F331853CBA100F33995 /* JMOAppDelegate.h */,
+				C29B3F591853CCCD00F33995 /* Singleton */,
+				C29B3F5C1853CCCD00F33995 /* Adapter */,
 				C29B3F341853CBA100F33995 /* JMOAppDelegate.m */,
 				C29B3F361853CBA100F33995 /* Main.storyboard */,
 				C29B3F391853CBA100F33995 /* JMOViewController.h */,
@@ -150,6 +162,29 @@
 				C29B3F4C1853CBA200F33995 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C29B3F591853CCCD00F33995 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				C29B3F5A1853CCCD00F33995 /* Singleton.h */,
+				C29B3F5B1853CCCD00F33995 /* Singleton.m */,
+			);
+			name = Singleton;
+			path = ../../../../DesignPatterns_OLD/DesignPatterns/DesignPatterns/DesignPatterns/Singleton;
+			sourceTree = "<group>";
+		};
+		C29B3F5C1853CCCD00F33995 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				C29B3F5D1853CCCD00F33995 /* JMOAdapterProtocol.h */,
+				C29B3F5E1853CCCD00F33995 /* JMOFirstClass.h */,
+				C29B3F5F1853CCCD00F33995 /* JMOFirstClass.m */,
+				C29B3F601853CCCD00F33995 /* JMOSecondClass.h */,
+				C29B3F611853CCCD00F33995 /* JMOSecondClass.m */,
+			);
+			name = Adapter;
+			path = ../../../../DesignPatterns_OLD/DesignPatterns/DesignPatterns/DesignPatterns/Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,7 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29B3F631853CCCD00F33995 /* JMOFirstClass.m in Sources */,
 				C29B3F311853CBA100F33995 /* main.m in Sources */,
+				C29B3F621853CCCD00F33995 /* Singleton.m in Sources */,
+				C29B3F641853CCCD00F33995 /* JMOSecondClass.m in Sources */,
 				C29B3F3B1853CBA100F33995 /* JMOViewController.m in Sources */,
 				C29B3F351853CBA100F33995 /* JMOAppDelegate.m in Sources */,
 			);

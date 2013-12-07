@@ -8,6 +8,10 @@
 
 #import "JMOViewController.h"
 
+#import "Singleton.h"
+#import "JMOFirstClass.h"
+#import "JMOSecondClass.h"
+
 @interface JMOViewController ()
 
 @end
@@ -18,6 +22,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //1. Singleton -> Only one instance :)
+    NSLog(@"%@",[Singleton sharedInstance]);
+    NSLog(@"%@",[[Singleton alloc] init]);
+    
+    //2. Adapter -> Multiple class, commun interface (using protocol)
+    [[JMOFirstClass new] customDestription];
+    [[JMOSecondClass new] customDestription];
+
 }
 
 - (void)didReceiveMemoryWarning
