@@ -25,6 +25,7 @@
 		C29B3F94185514C800F33995 /* JMOFirstClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F90185514C800F33995 /* JMOFirstClass.m */; };
 		C29B3F95185514C800F33995 /* JMOSecondClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F92185514C800F33995 /* JMOSecondClass.m */; };
 		C29B3F98185514EA00F33995 /* UIView+ChainOfResponsibility.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F97185514EA00F33995 /* UIView+ChainOfResponsibility.m */; };
+		C29B3F9C185519C400F33995 /* NSObject+Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = C29B3F9B185519C400F33995 /* NSObject+Decorator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		C29B3F92185514C800F33995 /* JMOSecondClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMOSecondClass.m; sourceTree = "<group>"; };
 		C29B3F96185514EA00F33995 /* UIView+ChainOfResponsibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ChainOfResponsibility.h"; sourceTree = "<group>"; };
 		C29B3F97185514EA00F33995 /* UIView+ChainOfResponsibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ChainOfResponsibility.m"; sourceTree = "<group>"; };
+		C29B3F9A185519C400F33995 /* NSObject+Decorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Decorator.h"; sourceTree = "<group>"; };
+		C29B3F9B185519C400F33995 /* NSObject+Decorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Decorator.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,7 @@
 				C29B3F89185514C800F33995 /* Singleton */,
 				C29B3F8C185514C800F33995 /* ChainOfResponsibility */,
 				C29B3F8D185514C800F33995 /* Adapter */,
+				C29B3F99185519A400F33995 /* Decorator */,
 				C29B3F331853CBA100F33995 /* JMOAppDelegate.h */,
 				C29B3F341853CBA100F33995 /* JMOAppDelegate.m */,
 				C29B3F361853CBA100F33995 /* Main.storyboard */,
@@ -196,6 +200,15 @@
 				C29B3F92185514C800F33995 /* JMOSecondClass.m */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		C29B3F99185519A400F33995 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				C29B3F9A185519C400F33995 /* NSObject+Decorator.h */,
+				C29B3F9B185519C400F33995 /* NSObject+Decorator.m */,
+			);
+			path = Decorator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +314,7 @@
 				C29B3F311853CBA100F33995 /* main.m in Sources */,
 				C29B3F93185514C800F33995 /* Singleton.m in Sources */,
 				C29B3F95185514C800F33995 /* JMOSecondClass.m in Sources */,
+				C29B3F9C185519C400F33995 /* NSObject+Decorator.m in Sources */,
 				C29B3F3B1853CBA100F33995 /* JMOViewController.m in Sources */,
 				C29B3F351853CBA100F33995 /* JMOAppDelegate.m in Sources */,
 			);

@@ -12,6 +12,7 @@
 #import "JMOFirstClass.h"
 #import "JMOSecondClass.h"
 #import "UIView+ChainOfResponsibility.h"
+#import "NSObject+Decorator.h"
 
 @interface JMOViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *labelResponderChain;
@@ -31,13 +32,17 @@
     NSLog(@"%@",[[Singleton alloc] init]);
     
     //2. Adapter -> Multiple class, commun interface (using protocol)
-    NSLog(@"\n2. Adapter -> Multiple class, commun interface (using protocol)");
+    NSLog(@"2. Adapter -> Multiple class, commun interface (using protocol)");
     [[JMOFirstClass new] customDestription];
     [[JMOSecondClass new] customDestription];
 
     //3. Responder chain
-    NSLog(@"\n3. Responder chain");
+    NSLog(@"3. Responder chain");
     [self.labelResponderChain logMyHierarchyCurrentLevel:0];
+    
+    //4. Decorator
+    NSLog(@"4. Decorator");
+    [[Singleton sharedInstance] shortDescription];
 }
 
 
