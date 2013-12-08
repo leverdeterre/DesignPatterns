@@ -11,8 +11,10 @@
 #import "Singleton.h"
 #import "JMOFirstClass.h"
 #import "JMOSecondClass.h"
+#import "UIView+ChainOfResponsibility.h"
 
 @interface JMOViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *labelResponderChain;
 
 @end
 
@@ -24,19 +26,19 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     //1. Singleton -> Only one instance :)
+    NSLog(@"1. Singleton -> Only one instance :)");
     NSLog(@"%@",[Singleton sharedInstance]);
     NSLog(@"%@",[[Singleton alloc] init]);
     
     //2. Adapter -> Multiple class, commun interface (using protocol)
+    NSLog(@"\n2. Adapter -> Multiple class, commun interface (using protocol)");
     [[JMOFirstClass new] customDestription];
     [[JMOSecondClass new] customDestription];
 
+    //3. Responder chain
+    NSLog(@"\n3. Responder chain");
+    [self.labelResponderChain logMyHierarchyCurrentLevel:0];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
